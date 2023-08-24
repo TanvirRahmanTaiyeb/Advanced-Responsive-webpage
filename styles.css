@@ -1,0 +1,188 @@
+/* Basic Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.header img {
+    max-width: 150px;
+    height: auto;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #333;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu li {
+    padding: 1em;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.mark-sheet {
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-info {
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+.marks-table th,
+.marks-table td {
+    padding: 1em;
+    text-align: center;
+}
+
+.marks-table th {
+    background-color: #333;
+    color: white;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Fluid Grid Layout */
+.mark-sheet {
+    width: 90%; /* Adjust the width as needed */
+    margin: 2em auto;
+}
+
+.marks-table th,
+.marks-table td {
+    width: 33.33%; /* Create a three-column layout */
+    box-sizing: border-box;
+}
+
+/* Responsive Images */
+.student-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    /* Adjust styles for screens up to 600px width */
+    .mark-sheet {
+        margin: 1em;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .marks-table {
+        font-size: 0.9rem;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu ul {
+        flex-direction: row;
+        background-color: #444;
+    }
+
+    .mobile-menu li {
+        padding: 0.5em;
+    }
+    
+    /* Additional Responsive Styles */
+    .student-info {
+        padding: 1em 0;
+    }
+
+    .marks-table th,
+    .marks-table td {
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Adjust styles for screens up to 400px width */
+    .student-info {
+        padding: 1em 0;
+    }
+
+    .marks-table th,
+    .marks-table td {
+        padding: 0.5em;
+    }
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+/* Form Styling */
+.contact-form {
+    padding: 2em;
+    border-top: 1px solid #ccc;
+}
+
+.contact-form h2 {
+    margin-bottom: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}

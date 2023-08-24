@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Set the viewport to control layout on various devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect to Google Fonts to improve font loading performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Import the Roboto font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section with school logo and title -->
+    <div class="header">
+        <img src="https://cdnsm5-ss8.sharpschool.com/UserFiles/Servers/Server_105054/Image/logo/logo_bernards-primary.gif" alt="School Logo">
+        <h1>Student Mark Sheet</h1>
+    </div>
+
+    <!-- Mobile menu for navigation on small screens -->
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Subjects</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section for student information and marks -->
+    <div class="mark-sheet">
+        <!-- Student information and profile picture -->
+        <div class="student-info">
+            <img src="https://assuredoccu.com/wp-content/uploads/2021/10/student.jpg" alt="Student Profile Picture">
+            <h2>John Doe</h2>
+            <p>Student ID: 123456</p>
+        </div>
+
+        <!-- Table to display subject marks and grades -->
+        <table class="marks-table">
+            <tr>
+                <th>Subject</th>
+                <th>Score</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td><div class="progress-bar" style="width: 95%;"></div></td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td><div class="progress-bar" style="width: 89%;"></div></td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>History</td>
+                <td><div class="progress-bar" style="width: 75%;"></div></td>
+                <td>B</td>
+            </tr>
+            <!-- Add more rows for other subjects... -->
+        </table>
+
+        <!-- Contact form for user interaction -->
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer section with copyright information -->
+    <div class="footer">
+        <p>&copy; 2023 Student Mark Sheet</p>
+    </div>
+</body>
+
+</html>
+
